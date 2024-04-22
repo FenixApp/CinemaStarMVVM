@@ -8,7 +8,7 @@ final class AppCoordinator: BaseCoordinator {
     override func start() {
         showFilmsModule()
     }
-    
+
     private func showFilmsModule() {
         let filmsCoordinator = FilmsCoordinator()
         add(coordinator: filmsCoordinator)
