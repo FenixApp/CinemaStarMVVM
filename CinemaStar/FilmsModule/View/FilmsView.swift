@@ -18,7 +18,6 @@ final class FilmsView: UIViewController {
     }()
 
     // MARK: - Public Properties
-
     var filmsViewModel: FilmsViewModelProtocol?
 
     // MARK: - Private Properties
