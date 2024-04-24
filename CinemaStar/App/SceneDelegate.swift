@@ -13,8 +13,10 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private func configureWindowScene(_ scene: UIScene) {
         guard let windowScene = scene as? UIWindowScene else { return }
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = FilmsViewController()
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
+        let builder = Builder()
+        let appCoordinator = AppCoordinator(builder: builder)
+        appCoordinator.start()
     }
 }

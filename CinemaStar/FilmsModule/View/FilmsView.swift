@@ -1,10 +1,10 @@
-// FilmsViewController.swift
+// FilmsView.swift
 // Copyright © RoadMap. All rights reserved.
 
 import UIKit
 
 /// Главный экран приложения
-final class FilmsViewController: UIViewController {
+final class FilmsView: UIViewController {
     // MARK: - Types
 
     // MARK: - Constants
@@ -18,6 +18,8 @@ final class FilmsViewController: UIViewController {
     }()
 
     // MARK: - Public Properties
+
+    var filmsViewModel: FilmsViewModelProtocol?
 
     // MARK: - Private Properties
 

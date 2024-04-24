@@ -5,16 +5,17 @@ import UIKit
 
 /// Координатор основного экрана с подборкой фильмов
 final class FilmsCoordinator: BaseCoordinator {
-    var rootViewController: UINavigationController?
+    private var builder: BuilderProtocol?
 
-    override func start() {
-        showFilms()
+    var rootViewController: UINavigationController?
+    var finishFlow: VoidHandler?
+
+    func setRootViewController(view: UIViewController, builder: BuilderProtocol) {
+        rootViewController = UINavigationController(rootViewController: view)
+        self.builder = builder
     }
 
-    func showFilms() {
-        let filmsViewController = Builder().makeFilmsViewController()
-        let rootViewController = UINavigationController(rootViewController: filmsViewController)
-        setAsRoot​(​_​: rootViewController)
-        self.rootViewController = rootViewController
+    func logOut() {
+        finishFlow?()
     }
 }
