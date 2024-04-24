@@ -17,6 +17,9 @@
 		0A7028EC2BD6463F00EB47A4 /* CinemaStarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7028EB2BD6463F00EB47A4 /* CinemaStarUITestsLaunchTests.swift */; };
 		C48184AA2BD95C0C00BF76C1 /* FilmsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48184A92BD95C0C00BF76C1 /* FilmsViewModel.swift */; };
 		C48184AC2BD965F300BF76C1 /* Edits.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48184AB2BD965F300BF76C1 /* Edits.swift */; };
+		C48184AF2BD9743100BF76C1 /* FilmsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48184AE2BD9743100BF76C1 /* FilmsViewCell.swift */; };
+		C48184B12BD9767000BF76C1 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48184B02BD9767000BF76C1 /* Film.swift */; };
+		C48184B42BD9775C00BF76C1 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48184B32BD9775C00BF76C1 /* UIFont + Extension.swift */; };
 		C4D971B02BD6EF12002673E1 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D971AF2BD6EF12002673E1 /* Builder.swift */; };
 		C4D971B22BD6F1F6002673E1 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D971B12BD6F1F6002673E1 /* BaseCoordinator.swift */; };
 		C4D971B82BD6F558002673E1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D971B72BD6F558002673E1 /* AppCoordinator.swift */; };
@@ -55,6 +58,9 @@
 		0A7028EB2BD6463F00EB47A4 /* CinemaStarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaStarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C48184A92BD95C0C00BF76C1 /* FilmsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewModel.swift; sourceTree = "<group>"; };
 		C48184AB2BD965F300BF76C1 /* Edits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edits.swift; sourceTree = "<group>"; };
+		C48184AE2BD9743100BF76C1 /* FilmsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsViewCell.swift; sourceTree = "<group>"; };
+		C48184B02BD9767000BF76C1 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		C48184B32BD9775C00BF76C1 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		C4D971AF2BD6EF12002673E1 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		C4D971B12BD6F1F6002673E1 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		C4D971B72BD6F558002673E1 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 				C4D971B32BD6F2F6002673E1 /* FilmsModule */,
 				C4D971AE2BD6EEF8002673E1 /* Builder */,
 				C4D971AD2BD6EE49002673E1 /* Coordinators */,
+				C48184B22BD9771D00BF76C1 /* Extensions */,
 				0A7028F82BD6489900EB47A4 /* App */,
 				0A7028F92BD648AA00EB47A4 /* SupportingFiles */,
 			);
@@ -155,6 +162,22 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		C48184AD2BD973D400BF76C1 /* FilmsViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C48184AE2BD9743100BF76C1 /* FilmsViewCell.swift */,
+			);
+			path = FilmsViewCell;
+			sourceTree = "<group>";
+		};
+		C48184B22BD9771D00BF76C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C48184B32BD9775C00BF76C1 /* UIFont + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C4D971AD2BD6EE49002673E1 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +209,7 @@
 		C4D971B42BD6F385002673E1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C48184B02BD9767000BF76C1 /* Film.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +217,7 @@
 		C4D971B52BD6F38F002673E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C48184AD2BD973D400BF76C1 /* FilmsViewCell */,
 				0A7028CC2BD6463E00EB47A4 /* FilmsView.swift */,
 			);
 			path = View;
@@ -385,12 +410,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48184B42BD9775C00BF76C1 /* UIFont + Extension.swift in Sources */,
 				C4D971B82BD6F558002673E1 /* AppCoordinator.swift in Sources */,
 				C4D971B22BD6F1F6002673E1 /* BaseCoordinator.swift in Sources */,
 				0A7028CD2BD6463E00EB47A4 /* FilmsView.swift in Sources */,
 				0A7028C92BD6463E00EB47A4 /* AppDelegate.swift in Sources */,
 				C4D971BA2BD6F713002673E1 /* FilmsCoordinator.swift in Sources */,
 				0A7028CB2BD6463E00EB47A4 /* SceneDelegate.swift in Sources */,
+				C48184B12BD9767000BF76C1 /* Film.swift in Sources */,
+				C48184AF2BD9743100BF76C1 /* FilmsViewCell.swift in Sources */,
 				C48184AA2BD95C0C00BF76C1 /* FilmsViewModel.swift in Sources */,
 				C48184AC2BD965F300BF76C1 /* Edits.swift in Sources */,
 				C4D971B02BD6EF12002673E1 /* Builder.swift in Sources */,
