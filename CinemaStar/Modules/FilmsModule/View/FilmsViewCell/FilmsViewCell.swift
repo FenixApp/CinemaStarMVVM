@@ -4,7 +4,7 @@
 import UIKit
 
 /// Ячейка для фильма
-class FilmsViewCell: UICollectionViewCell {
+final class FilmsViewCell: UICollectionViewCell {
     // MARK: - Constants
 
     private enum Constants {
@@ -19,7 +19,6 @@ class FilmsViewCell: UICollectionViewCell {
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.layer.cornerRadius = 8
-        imageView.backgroundColor = .black
         return imageView
     }()
 
@@ -34,6 +33,14 @@ class FilmsViewCell: UICollectionViewCell {
         return label
     }()
 
+    // MARK: - Public Properties
+
+    var filmId: Int?
+
+    // MARK: - Private Properties
+
+    private var imageRequest: ImageRequest?
+
     // MARK: - Initializers
 
     override init(frame: CGRect) {
@@ -45,6 +52,20 @@ class FilmsViewCell: UICollectionViewCell {
         super.init(frame: .zero)
         configureUI()
     }
+
+    // MARK: - Public Methods
+
+    func configureCell(info: Film) {
+        imageRequest = ImageRequest(url: info.posterURL)
+        imageRequest?.execute(withCompletion: { [weak self] image in
+            self?.filmImageView.image = image
+        })
+        filmId = info.id
+        filmTitleLabel.text = info.name
+        filmTitleLabel.text = "\(info.name)\n\(Constants.star) \(info.rating)"
+    }
+
+    // MARK: - Private Methods
 
     private func configureUI() {
         contentView.addSubview(filmImageView)
@@ -62,12 +83,5 @@ class FilmsViewCell: UICollectionViewCell {
         filmTitleLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
         filmTitleLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
         filmTitleLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
-    }
-
-    // MARK: - Public Methods
-
-    func configureCell(info: Film) {
-        filmTitleLabel.text = info.name
-        filmTitleLabel.text = "\(info.name)\n\(Constants.star) \(info.rating)"
     }
 }

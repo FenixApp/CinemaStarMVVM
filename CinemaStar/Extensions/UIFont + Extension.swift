@@ -3,18 +3,18 @@
 
 import UIKit
 
-/// Расширения для использования новых шрифтов
+/// Расширение для использования новых шрифтов
 extension UIFont {
-    /// Шрифт Verdana
+    /// Шрифт Inter
     /// - Parameter ofSize: Размер необходимого шрифта
-    /// - Returns: Шрифт Verdana
+    /// - Returns: Шрифт Inter
     static func inter(ofSize: CGFloat) -> UIFont {
         UIFont(name: "Inter-Medium", size: ofSize) ?? UIFont.systemFont(ofSize: ofSize)
     }
 
-    /// Шрифт Verdana Bold
+    /// Шрифт InterBold
     /// - Parameter ofSize: Размер необходимого шрифта
-    /// - Returns: Шрифт Verdana Bold
+    /// - Returns: Шрифт InterBold
     static func interBold(ofSize: CGFloat) -> UIFont {
         UIFont(name: "Inter-Bold", size: ofSize) ?? UIFont.systemFont(ofSize: ofSize)
     }
