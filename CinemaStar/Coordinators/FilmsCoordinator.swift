@@ -18,4 +18,9 @@ final class FilmsCoordinator: BaseCoordinator {
     func logOut() {
         finishFlow?()
     }
+
+    func pushFilmDetailView(id: Int?) {
+        let filmDetailView = builder?.makeDetailFilmModule(coordinator: self, id: id)
+        rootViewController?.pushViewController(filmDetailView ?? UIViewController(), animated: true)
+    }
 }
