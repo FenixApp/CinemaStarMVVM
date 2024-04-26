@@ -13,8 +13,8 @@
 		0A7028D22BD6463F00EB47A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7028D12BD6463F00EB47A4 /* Assets.xcassets */; };
 		0A7028D52BD6463F00EB47A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7028D32BD6463F00EB47A4 /* LaunchScreen.storyboard */; };
 		0A7028E02BD6463F00EB47A4 /* CinemaStarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7028DF2BD6463F00EB47A4 /* CinemaStarTests.swift */; };
-		0A7028EA2BD6463F00EB47A4 /* CinemaStarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7028E92BD6463F00EB47A4 /* CinemaStarUITests.swift */; };
-		0A7028EC2BD6463F00EB47A4 /* CinemaStarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7028EB2BD6463F00EB47A4 /* CinemaStarUITestsLaunchTests.swift */; };
+		0A7028EA2BD6463F00EB47A4 /* FilmsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7028E92BD6463F00EB47A4 /* FilmsUITests.swift */; };
+		0A7028EC2BD6463F00EB47A4 /* FilmDetailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7028EB2BD6463F00EB47A4 /* FilmDetailUITests.swift */; };
 		C42FBC592BDAD8E000104129 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FBC582BDAD8E000104129 /* UILabel + Extension.swift */; };
 		C42FBC5B2BDAD93A00104129 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FBC5A2BDAD93A00104129 /* UIView + Extension.swift */; };
 		C42FBC5D2BDAD95600104129 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42FBC5C2BDAD95600104129 /* Colors.xcassets */; };
@@ -80,8 +80,8 @@
 		0A7028DB2BD6463F00EB47A4 /* CinemaStarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaStarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7028DF2BD6463F00EB47A4 /* CinemaStarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaStarTests.swift; sourceTree = "<group>"; };
 		0A7028E52BD6463F00EB47A4 /* CinemaStarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinemaStarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A7028E92BD6463F00EB47A4 /* CinemaStarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaStarUITests.swift; sourceTree = "<group>"; };
-		0A7028EB2BD6463F00EB47A4 /* CinemaStarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaStarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0A7028E92BD6463F00EB47A4 /* FilmsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsUITests.swift; sourceTree = "<group>"; };
+		0A7028EB2BD6463F00EB47A4 /* FilmDetailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailUITests.swift; sourceTree = "<group>"; };
 		C42FBC582BDAD8E000104129 /* UILabel + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
 		C42FBC5A2BDAD93A00104129 /* UIView + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		C42FBC5C2BDAD95600104129 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -190,8 +190,8 @@
 		0A7028E82BD6463F00EB47A4 /* CinemaStarUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0A7028E92BD6463F00EB47A4 /* CinemaStarUITests.swift */,
-				0A7028EB2BD6463F00EB47A4 /* CinemaStarUITestsLaunchTests.swift */,
+				0A7028E92BD6463F00EB47A4 /* FilmsUITests.swift */,
+				0A7028EB2BD6463F00EB47A4 /* FilmDetailUITests.swift */,
 			);
 			path = CinemaStarUITests;
 			sourceTree = "<group>";
@@ -629,8 +629,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A7028EA2BD6463F00EB47A4 /* CinemaStarUITests.swift in Sources */,
-				0A7028EC2BD6463F00EB47A4 /* CinemaStarUITestsLaunchTests.swift in Sources */,
+				0A7028EA2BD6463F00EB47A4 /* FilmsUITests.swift in Sources */,
+				0A7028EC2BD6463F00EB47A4 /* FilmDetailUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
