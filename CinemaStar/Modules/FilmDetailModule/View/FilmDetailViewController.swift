@@ -30,6 +30,7 @@ final class FilmDetailViewController: UIViewController {
 
     private lazy var detailInfoFilmTableView = {
         let tableView = UITableView()
+        tableView.accessibilityAssistiveTechnologyFocusedIdentifiers()
         tableView.allowsSelection = false
         tableView.backgroundColor = .clear
         tableView.separatorStyle = .none
