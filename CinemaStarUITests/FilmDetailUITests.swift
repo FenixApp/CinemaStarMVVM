@@ -1,5 +1,4 @@
 // FilmDetailUITests.swift
-// Copyright © RoadMap. All rights reserved.
 
 import XCTest
 
